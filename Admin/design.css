@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    top: 7px;
+    left: 37.5px;
+    font-size: 1.625em;
+    color: rgb(210, 217, 17);
+    text-shadow: 2px 2px 4px #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin, .home {
+    position: absolute;
+    top: 7px;
+    right: 37.5px;
+    font-size: 0.375em;
+    color: rgb(210, 217, 17);
+    text-shadow: 2px 2px 4px #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('pics/plant.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 300px;
+    height: auto; /* Adjusted to auto for variable content */
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(11.25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Adjusted for vertical alignment */
+    padding: 20px; /* Adjusted for consistent padding */
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 15px 0; /* Adjusted for consistent spacing */
+    width: 100%; /* Adjusted for full width */
+    border-bottom: 1.5px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: -15px; /* Adjusted to move the label above the input */
+    left: 3.75px;
+    color: #fff;
+    font-size: 0.75em;
+    pointer-events: none;
+    transition: 0.375s;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+select:focus ~ label,
+select:valid ~ label {
+    top: -15px; /* Adjusted to move the label above the input */
+}
+
+
+.inputbox input {
+    width: 100%;
+    height: 37.5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.75em;
+    padding: 0 3.75px; /* Adjusted for consistent padding */
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 6px;
+    color: #fff; /* Adjusted to make the icon white */
+    font-size: 0.9em;
+    top: 15px;
+}
+
+
+.forget {
+    margin: -11.25px 0 11.25px;
+    font-size: 0.675em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 2.25px;
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+.register {
+    font-size: 0.675em;
+    color: #fff;
+    text-align: center;
+    margin: 15px 0; /* Adjusted for consistent spacing */
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.admin-link, .home-link {
+    font-size: 0.675em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.admin-link:hover, .home-link:hover {
+    text-decoration: underline;
+}
+
